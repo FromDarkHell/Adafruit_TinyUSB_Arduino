@@ -56,7 +56,7 @@ private:
   // String descriptor
   const char *_desc_str_arr[STRING_DESCRIPTOR_MAX];
   uint8_t _desc_str_count;
-  uint16_t _desc_str[127 + 1]; // up to 127 unicode characters (254 bytes) with headers
+  uint16_t _desc_str[126 + 1]; // up to 126 unicode characters (252 bytes) with headers
 
 public:
   Adafruit_USBD_Device(void);
